@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"skipLibCheck": true,
+		"moduleResolution": "bundler",
+		"strict": true,
+		"noEmit": true,
+		"allowJs": true
+	},
+	"exclude": ["stories", ".storybook", "node_modules"]
+}
