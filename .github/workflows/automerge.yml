@@ -1,10 +1,29 @@
 name: Auto Approve and Merge PRs
 
 on:
-  pull_request_target:
-    types: [opened, synchronize, reopened]
+  pull_request:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  PR_URL: ${{github.event.pull_request.html_url}}
 
 jobs:
-  auto-approve-merge-dependabot:
-    uses: Neovici/cfg/.github/workflows/automerge.yml@master
-    secrets: inherit
+  auto-approve-and-merge:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    steps:
+      - name: Wait for PR checks to complete
+        run: gh pr checks --required --fail-fast --watch "$PR_URL"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Enable auto-approve
+        run: gh pr review --approve "$PR_URL"
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Enable auto-merge
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
