@@ -1,10 +1,27 @@
----
 name: Storybook
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
-  storybook:
-    uses: Neovici/cfg/.github/workflows/story.yml@master
-    secrets: inherit
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'npm'
+      - name: Install
+        run: npm ci
+      - name: Build storybook
+        run: npm run storybook:build
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./storybook-static
+          branch: gh-pages
+          clean-exclude: pr
+          force: false

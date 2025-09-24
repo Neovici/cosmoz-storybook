@@ -1,6 +1,5 @@
 {
   "name": "cosmoz-storybook",
-  "private": true,
   "version": "1.0.0",
   "type": "module",
   "description": "A storybook composition that allows you to browse cosmoz components",
@@ -10,17 +9,22 @@
     "storybook:start": "storybook dev -p 8000",
     "storybook:build": "storybook build",
     "storybook:deploy": "storybook-to-ghpages",
-    "storybook:preview": "npm run storybook:build && web-dev-server --root-dir ./storybook-static/ --open",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "@neovici/cfg": "^2.6.1",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/js": "^9.36.0",
     "@storybook/web-components-vite": "^9.1.7",
     "eslint": "^9.36.0",
-    "http-server": "^14.1.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "husky": "^9.1.7",
     "prettier": "^3.6.2",
     "storybook": "^9.1.7",
     "typescript": "~5.8.3",
+    "typescript-eslint": "^8.44.1",
     "vite": "^7.1.7"
   }
 }
