@@ -8,10 +8,6 @@ const config: StorybookConfig = {
 		options: {},
 	},
 	refs: {
-		'cosmoz-icons': {
-			title: 'Cosmoz Icons Storybook',
-			url: 'https://neovici.github.io/cosmoz-icons',
-		},
 		'cosmoz-dropdown': {
 			title: 'Cosmoz Dropdown Storybook',
 			url: 'https://neovici.github.io/cosmoz-dropdown',
