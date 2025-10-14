@@ -24,6 +24,10 @@ const config: StorybookConfig = {
 			title: 'Cosmoz Slider Storybook',
 			url: 'https://neovici.github.io/cosmoz-slider',
 		},
+		'cosmoz-input': {
+			title: 'Cosmoz Input Storybook',
+			url: 'https://neovici.github.io/cosmoz-input',
+		},
 	},
 };
 
