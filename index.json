@@ -1,1 +1,1 @@
-{"v":5,"entries":{"welcome--overview":{"type":"story","subtype":"story","id":"welcome--overview","name":"Overview","title":"Welcome","importPath":"./stories/Welcome.stories.ts","tags":["dev","test"],"exportName":"Overview"}}}
+{"v":5,"entries":{"welcome--overview":{"type":"story","subtype":"story","id":"welcome--overview","name":"Overview","title":"Welcome","importPath":"./stories/Welcome.stories.ts","tags":["dev","test","manifest"],"exportName":"Overview"}}}
