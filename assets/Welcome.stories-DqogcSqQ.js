@@ -1,4 +1,4 @@
-const t={title:"Welcome",parameters:{layout:"fullscreen"}},e={render:()=>`
+import{r as e}from"./preload-helper-Dcl5TOAQ.js";var t,n,r;e((()=>{t={title:`Welcome`,parameters:{layout:`fullscreen`}},n={render:()=>`
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap');
       html {
@@ -8,7 +8,7 @@ const t={title:"Welcome",parameters:{layout:"fullscreen"}},e={render:()=>`
     <div style="padding: 2rem; text-align: center;">
       <h1>Welcome to Cosmoz Components</h1>
     </div>
-  `};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  `},n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: () => \`
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap');
@@ -20,4 +20,4 @@ const t={title:"Welcome",parameters:{layout:"fullscreen"}},e={render:()=>`
       <h1>Welcome to Cosmoz Components</h1>
     </div>
   \`
-}`,...e.parameters?.docs?.source}}};const s=["Overview"];export{e as Overview,s as __namedExportsOrder,t as default};
+}`,...n.parameters?.docs?.source}}},r=[`Overview`]}))();export{n as Overview,r as __namedExportsOrder,t as default};
