@@ -1,4 +1,4 @@
-import{r as e}from"./preload-helper-Dcl5TOAQ.js";var t,n,r;e((()=>{t={title:`Welcome`,parameters:{layout:`fullscreen`}},n={render:()=>`
+import{r as e}from"./preload-helper-Dl2UHooj.js";var t,n,r;e((()=>{t={title:`Welcome`,parameters:{layout:`fullscreen`}},n={render:()=>`
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap');
       html {
