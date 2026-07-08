@@ -28,3 +28,8 @@ storybook-static
 .eslintcache
 .direnv
 .envrc
+
+# codecov uploader artifacts
+codecov
+codecov.SHA256SUM
+codecov.SHA256SUM.sig
