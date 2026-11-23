@@ -1,6 +1,6 @@
 {
   "name": "cosmoz-storybook",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "A storybook composition that allows you to browse cosmoz components",
   "scripts": {

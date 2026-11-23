@@ -1,3 +1,9 @@
+## 1.0.2
+
+### Patch Changes
+
+- 2d37ed4: Run CI on Node.js 26.
+
 ## 1.0.1
 
 ### Patch Changes
